@@ -1,0 +1,21 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 300rpx;
+}
+.text{
+  font-style: italic;
+}
+.input{
+  height: 100rpx;
+  border: solid 1rpx #e3e3e3;
+  border-radius: 20rpx;
+  padding-left: 220rpx;
+  color: #07c160;
+}
+.btn{
+  margin-top: 400rpx;
+  color: #fff;
+  background: #07c160;
+}

@@ -1,0 +1,49 @@
+page{
+
+  position: relative;
+}
+
+.header{
+  background-color: #a3d8f4;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: -10;
+
+}
+.immg{
+  position: absolute;
+  left: 30px;
+  bottom: 10px;
+  width: 30px;
+  height: 30px;
+}
+.publish-container{
+  font-size: 60rpx;
+  font-weight: 500;
+  color: #fff;
+  z-index: 999;
+  width: 100rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 40rpx;
+  bottom: 300rpx;
+  background:#9ab3f5;
+  border-radius: 30rpx;
+  border: solid 2rpx #b36b00;
+}
+.search-container{
+  flex: 1;
+}
+.faxianList{
+  margin-top: 170rpx;
+}
+.faxianPanel{
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+}

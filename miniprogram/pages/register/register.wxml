@@ -1,0 +1,10 @@
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{school}}">
+    <input class="input" name="school" value="{{school[index]}}">
+    {{school[index]}}
+    </input>
+  </picker>
+    <button class="btn" formType="submit" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">提交并授权</button>
+  </form>
+</view>

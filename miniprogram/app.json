@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/faxian/index",
+    "pages/me/index",
+    "pages/index/index",
+    "pages/register/register",
+    "pages/publish/publish"
+  ],
+  "window": {
+    "backgroundColor": "#7579e7",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#7579e7",
+    "navigationBarTitleText": "app",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/faxian/index",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

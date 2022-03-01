@@ -1,0 +1,37 @@
+<view class="{{open === false ? 'container':'contain' }}" bindtap='openurl'>
+  <view class="content">
+    <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%; display:flex;">
+      <block wx:for="{{faxian.img}}" wx:key="*this">
+        <view class="scroll-view-item_H" id="demo{{index}}">
+          <image class="itempic" src="{{item}}" mode="widthFix" bindtap="pre" data-src="{{faxian.img}}"
+            data-url="{{item}}"></image>
+        </view>
+      </block>
+    </scroll-view>
+    <text class="con">{{faxian.content}}<text class="time">{{time}}</text></text>
+  </view>
+
+
+  <view class="fbuser">
+    <view class="ctrl"> 
+  <view class="ctrl-item" bindtap="onComment">
+    <i class="iconfont icon-pinglun icon"></i>
+
+  </view>
+  
+  <!-- <view class="ctrl-item share ">
+    <button open-type="share" class="share-btn" >
+    <i class="iconfont icon-fenxiang icon"></i>
+</button>
+  </view> -->
+
+    </view>
+    <view class="des">
+      <text style="font-size:12px; ">{{faxian.nickName}}</text>
+    </view>
+    <image class="pic" src=" {{faxian.avatarUrl}} "></image>
+    
+  </view>
+
+
+</view>

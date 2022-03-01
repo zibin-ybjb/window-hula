@@ -1,0 +1,21 @@
+
+<view class="container">
+  <view class="header">
+    <image class="pic" src="{{info.avatarUrl}}"></image>
+    <view class="info">
+      <text class="nick"> {{info.nickName}} </text>
+        <!-- <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange"
+          value="{{multiIndex}}" range="{{multiArray}}">
+          <view class="picker">
+            <text class="nick"> 地址{{info.dormitory}}：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}</text>
+          </view>
+        </picker> -->
+    </view>
+
+    
+  </view>
+  <view class="footer">
+        <button class="butlist" open-type="contact" bindcontact="handleContact">聊客服</button>
+        <button class="butlist" open-type="share" >分享给好友</button>
+    </view>
+</view>

@@ -1,0 +1,23 @@
+<view class="container"> 
+  
+  <textarea class="content" placeholder="..." placeholder-style="color:#fff"
+  bindinput="onPut" auto-focus bindfocus="onFocus" bindblur="onBlur">
+  </textarea>
+<view class="imagelist">
+  <block wx:for="{{images}}" wx:key="*this">
+    <view class="image-wrap">
+    <image class="image" src="{{item}} "  bindtap="pre" data-src="{{item}}"></image>
+    <i class="iconfont icon-shanchu" bindtap="delete" data-index="{{index}}">
+    </i>
+  </view>
+  </block>
+   <view class="image-list selectphoto" bindtap="choose" hidden="{{!select}}">
+    <i class="text iconfont icon-tianjia"></i>
+  </view>
+</view>
+<view class="footer-c">
+<view class="footer"  style="bottom:{{bottom}}px" bindtap="send">
+    <i class="iconfont icon-fabu send-btn {{index==1? 'sendm' :''}}"></i>
+</view>
+</view>
+</view>
